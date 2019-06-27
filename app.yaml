@@ -1,0 +1,31 @@
+runtime: php
+env: flex
+
+runtime_config:
+  document_root: public
+
+# Ensure we skip ".env", which is only for local development
+skip_files:
+  - .env
+
+env_variables:
+  # Put production environment variables here.
+  APP_ENV: production
+  APP_LOG: errorlog
+  APP_KEY: base64:GC+PMX5pbvPdPK72lY2enX7V6jlWqCtJIOSdkdOX8mg=
+  STORAGE_DIR: /tmp
+  CACHE_DRIVER: database
+  SESSION_DRIVER: database
+  ## Set these environment variables according to your CloudSQL configuration.
+  DB_HOST: localhost
+  DB_DATABASE: db_tanikopi
+  DB_USERNAME: root
+  DB_PASSWORD:
+  DB_SOCKET: /cloudsql/tanikopi-223512:asia-southeast1:cloudsql-tanikopi
+
+  QUEUE_DRIVER: database
+
+beta_settings:
+    # for Cloud SQL, set this value to the Cloud SQL connection name,
+    # e.g. "project:region:cloudsql-instance"
+    cloud_sql_instances: "tanikopi-223512:asia-southeast1:cloudsql-tanikopi"

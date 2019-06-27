@@ -1,0 +1,44 @@
+/* Alert Message */
+.pop-up{
+    min-width: 250px;
+    min-height: 60px;
+    position: fixed;
+    top: 65px;
+    right: 0px;
+    z-index: 100;
+}
+.pop-up .nav{
+    display: block;
+}
+
+.site-footer {
+    background: #0da857;
+}
+
+ul.sidebar-menu li a.active, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
+    background: #0da857;
+}
+
+ul.top-menu > li > .logout{
+    background: #0da857;
+}
+
+a.logo span{
+    color: #0da857;
+}
+
+.btn-theme{
+    background-color:#0da857 ;
+}
+
+.btn-theme:hover, .btn-theme:focus, .btn-theme:active, .btn-theme.active, .open .dropdown-toggle.btn-theme{
+    background-color: #59a85b;
+}
+
+.form-login h2.form-login-heading{
+    background: #0da857;
+}
+
+.backstretch{
+    background-color: #1fa86c;
+}
